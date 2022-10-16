@@ -1,9 +1,6 @@
-# create your drupal and postgres config here, based off the last assignment
 services:
   drupal:
-    build:
-      context: .
-      dockerfile: drupal.Dockerfile
+    image: drupal:9.3.13
     ports:
       - 8080:80
     volumes:
